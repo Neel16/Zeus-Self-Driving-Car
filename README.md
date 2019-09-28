@@ -4,29 +4,29 @@ SJSU CMPE-243 Project - Embedded Applications
 
 ## Team
 
-# Neel Patel
+### Neel Patel
     - Team Lead
     - Android App
     - Master ECU
     - Communications ECU
-# Himanshu Gunjal
+### Himanshu Gunjal
     - Master ECU
     - Communications ECU
-# Aman Chandan
+### Aman Chandan
     - Geospatial ECU
     - Material Manager
-# Artik Shetty
+### Artik Shetty
     - Motor ECU
-# Karan Daryani
+### Karan Daryani
     - Car Layout Designer
     - Motor ECU
     - PCB Design
-# Oliver Zhu
+### Oliver Zhu
     - Sensors ECU
     - GIT repository manager
-# Wendy Chao
+### Wendy Chao
     - Sensors ECU
-# Namdev Prabhugaonkar
+### Namdev Prabhugaonkar
     - Geospatial ECU
     - PCB Design
 
