@@ -4,16 +4,34 @@ SJSU CMPE-243 Project - Embedded Applications
 
 ## Team
 
-- Preetpal Kang
-- Himanshu Gunjal
-- Aman Chandan
-- Wendy Chao
-- Karan Daryani  
-- Neel Patel
-- Namdev Prabhugaonkar
-- Artik Shetty 
-- Oliver Zhu 
+# Neel Patel
+    - Team Lead
+    - Android App
+    - Master ECU
+    - Communications ECU
+# Himanshu Gunjal
+    - Master ECU
+    - Communications ECU
+# Aman Chandan
+    - Geospatial ECU
+    - Material Manager
+# Artik Shetty
+    - Motor ECU
+# Karan Daryani
+    - Car Layout Designer
+    - Motor ECU
+    - PCB Design
+# Oliver Zhu
+    - Sensors ECU
+    - GIT repository manager
+# Wendy Chao
+    - Sensors ECU
+# Namdev Prabhugaonkar
+    - Geospatial ECU
+    - PCB Design
 
-## TODOs
+## OVERVIEW 
 
-All Done:)
+ This Project can be compiled with Eclipse Neon to generate Hex Files. This files need to be flashed onto the SJONE boards for the operation of the system.
+ 
+ The Wiki Report for this project can be found at [Zeus : Self Driving Car](http://socialledge.com/sjsu/index.php/S19:_Zeus)
