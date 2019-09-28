@@ -1,0 +1,4 @@
+#Sat May 04 22:55:51 PDT 2019
+base.0=/Users/kingneel/Desktop/for android/mapwithmarker from github/android-google-maps-demo-master/app/build/intermediates/transforms/dexMerger/debug/4
+path.0=classes.dex
+renamed.0=classes.dex

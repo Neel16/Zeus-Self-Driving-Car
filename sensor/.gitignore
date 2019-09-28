@@ -1,0 +1,17 @@
+_build/*
+_build_mpu/*
+
+/_build_mpu
+/_build
+
+/_can_dbc/*.h
+/_build_with_dbc/
+
+/test/ut_build/*
+
+/test/code/*
+/test/code_permanent_mocks/*
+/test/eclipse_project/*
+/test/install_mingw/*
+/test/install_ruby25/*
+/test/install_unity_cmock/*

@@ -1,0 +1,58 @@
+compiler:
+  path: gcc
+  source_path: '../L5_Application/c_code/'
+  unit_tests_path: &unit_tests_path 'code_test/'
+  build_path:      &build_path 'ut_build/'
+  options:
+    - -c -g 
+    - -coverage
+    - -Wall
+    - -Wextra
+    - -Werror
+    - -Wstrict-prototypes
+    - -Wno-unused-function
+    - -std=c99
+  includes:
+    prefix: '-I'
+    items:
+      # Cmock & Unity includes are first
+      - './install_unity_cmock/src/'
+      - './install_unity_cmock/vendor/unity/src/'
+      # Mocks are included next because we want the mocks to be found first
+      - './ut_build/mocks/'
+      - './code_permanent_mocks/'
+      # Source code under test
+      - '../_can_dbc/'
+      - '../L2_Drivers/'
+      #- '../L3_Drivers/'
+      - '../L5_Application/c_code/'
+      - *unit_tests_path
+  defines:
+    prefix: '-D'
+    items:
+      - CMOCK_MEM_SIZE=128000
+      - UNIT_TEST
+  object_files:
+    prefix: '-o'
+    extension: '.o'
+    destination: *build_path
+linker:
+  path: gcc
+  options:
+    - -lm -coverage
+  includes:
+    prefix: '-I'
+  object_files:
+    path: *build_path
+    extension: '.o'
+  bin_files:
+    prefix: '-o'
+    extension: '.exe'
+    destination: *build_path
+:cmock:
+  :plugins: [ignore,ignore_arg,expect_any_args,array,callback,return_thru_ptr]
+  :includes: []
+  :mock_path: ./ut_build/mocks
+  :verbosity: 3
+
+colour: true
